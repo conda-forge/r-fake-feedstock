@@ -1,4 +1,4 @@
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fake_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fake/fake_{{ version }}.tar.gz
-  sha256: dba09a360533c843eb1e24422e79ac52c71364de4d504ab76f7a79ee8b1205f1
+  sha256: 398fe5c57ca148244beea14d211ae4d08fc2816f99b7492719ad83c04af5b9d9
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
